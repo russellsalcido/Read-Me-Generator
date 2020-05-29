@@ -3,41 +3,33 @@ const axios = require("axios");
 const inquirer = require("inquirer");
 
 inquirer
-  .prompt({
+  .prompt(
+    {
     message: "Enter your GitHub username:",
     name: "username"
-  })
+    },
+  )
   .then(function({ username }) {
-    const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
-    console.log();
+    const queryUrl = `https://api.github.com/users/${username}`;
 
     axios.get(queryUrl).then(function(res) {
-      const repoNames = res.data.map(function(repo) {
-        return repo.name;
-        console.log(repo)
+        const name = res.data.name(function(name) {
+            return name;
+        console.log(res.data.name)
+        console.log(res.data.email)
+        console.log(res.data.avatar_url)
+
+
       });
+     
+      
 
-    //   const repoData = ;
-
-    //   fs.writeFile("read-me.md", repoName, function(err) {
+    //   fs.writeFile("read-me.md", repoNamesStr, function(err) {
     //     if (err) {
     //       throw err;
     //     }
 
-    //     console.log()
-    //   });
+    //   
+    // });
     });
-  });
-
-// const questions = [
-
-// ];
-
-// function writeToFile(fileName, data) {
-// }
-
-// function init() {
-
-// }
-
-// init();
+});
