@@ -1,8 +1,9 @@
 const fs = require("fs");
 const axios = require("axios");
+const util = require("util");
 const inquirer = require("inquirer");
 
-inquirer.prompt(
+inquirer.prompt([
   {
   type: "input",
   name: "username",
@@ -17,11 +18,6 @@ inquirer.prompt(
   type: "input",
   name: "description",
   message: "Describe your project:"
-  },
-  {
-  type: "input",
-  name: "table of contents",
-  message: "Enter your GitHub username:"
   },
   {
   type: "input",
@@ -40,11 +36,6 @@ inquirer.prompt(
   },
   {
   type: "input",
-  name: "licence",
-  message: "List your collaborators, if any, with links to their GitHub profiles. Include third-party assets and tutorials you utilized:"
-  },
-  {
-  type: "input",
   name: "contributing",
   message: "List your collaborators, if any, with links to their GitHub profiles. Include third-party assets and tutorials you utilized:"
   },
@@ -53,7 +44,8 @@ inquirer.prompt(
   name: "tests",
   message: "Go the extra mile and write tests for your application. Then provide examples on how to run them:"
   },
-)
+]);
+
  console.log()
   
 
