@@ -1,8 +1,6 @@
-function generateMarkdown(data) {
-  return `
-# Title 
-
-${data.title}
+module.exports = function generateMarkdown(data) {
+return`
+#  ${data.title}
 
 ## Description 
 
@@ -55,8 +53,9 @@ https://www.contributor-covenant.org/version/2/0/code_of_conduct/code_of_conduct
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them.
+${data.tests}
+
 `
+return
 }
 
-module.exports = generateMarkdown;
