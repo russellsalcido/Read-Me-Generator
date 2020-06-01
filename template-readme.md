@@ -8,6 +8,9 @@
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
+* [Badges](#badges)
+* [Contributing](#contributing)
+* [Tests](#tests)
 
 ## Installation
 
