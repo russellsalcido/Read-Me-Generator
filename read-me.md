@@ -1,11 +1,11 @@
 
 # Title
 
-a
+Read-Me Generator
 
 ## Description 
 
-a
+A fast and reliable way to produce quality read-me.md documents. No more excuses to avoid a good read-me!
 
 ## Table of Contents
 
@@ -20,15 +20,15 @@ a
 
 ## Installation
 
-a
+Install node and require Axios, Util, FS, and Inquirer.
 
 ## Usage 
 
-aa
+Simply run "node index.js" and follow the prompts. A read-me.md file will be magically created within the file server for you.
 
 ## Credits
 
-a
+Thank you to my teacher and TA for their outstanding tutelage.
 
 ## License
 
@@ -58,7 +58,7 @@ https://www.contributor-covenant.org/version/2/0/code_of_conduct/code_of_conduct
 
 ## Tests
 
-a
+No tests available at this time.
 
 ## Questions
     ## undefined
